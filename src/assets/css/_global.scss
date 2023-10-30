@@ -1,0 +1,72 @@
+body {
+  position: relative;
+}
+ul {
+  list-style-type: none;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: green;
+  }
+}
+input {
+  height: 40px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: none !important;
+  outline: 0 !important;
+  border-color: green !important;
+}
+
+.start::after {
+  content: "*";
+  color: red;
+}
+
+// controlList
+.controlList {
+  padding: 0px;
+  margin-top: 15px;
+  text-align: center;
+  // li
+  li {
+    display: inline-block;
+    // a
+    a {
+      color: black;
+      margin-right: 10px;
+      cursor: pointer !important;
+      vertical-align: middle;
+    }
+  }
+  // delete button
+  .delete button {
+    color: red;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: baseline;
+    border: 0px;
+    &:hover,
+    &:active {
+      border: 0px;
+    }
+  }
+  // edit link
+  .edit a {
+    color: blue;
+    vertical-align: text-top;
+  }
+  // view link
+  .view a {
+    color: green;
+  }
+}
